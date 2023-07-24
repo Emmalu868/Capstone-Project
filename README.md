@@ -1,5 +1,5 @@
-# Capstone-Project
-Personal Finance Management Application
+# Personal Finance Management Application
+
 ## Group Members
 - Karthika Ramachandran
 - Shan Lu
