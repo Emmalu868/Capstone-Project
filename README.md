@@ -1,5 +1,5 @@
 # Personal Finance Management Application
-![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Personal-Finance.jpg)
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/load-image-1-1.jpg)
 
 ## Group Members
 - Karthika Ramachandran
