@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Finance Tracker</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Transactions</a></li>
+        <li><a href="#">Budgets</a></li>
+        <li><a href="#">Reports</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="overview">
+      <!-- Add content for an overview of finances, like account balance, net worth, etc. -->
+    </section>
+    <section class="transactions">
+      <!-- Add content for displaying transactions and recent activity -->
+    </section>
+    <section class="budget">
+      <!-- Add content for displaying budget information -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Finance Tracker. All rights reserved.</p>
+  </footer>
+</body>
+    <h1>Flask File Uploads Tutorial</h1>
+    
+    <form method='POST' enctype='multipart/form-data'>
+        {{form.hidden_tag()}}
+        {{form.file()}}
+        {{form.submit()}}
+        </form>
+    
+</html>
+
+
+<!-- index.html -->
+
+<form action="/add_transaction" method="post">
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" required>
+
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" step="0.01" required>
+
+    <label for="category">Category:</label>
+    <input type="text" id="category" name="category">
+
+    <input type="submit" value="Add Transaction">
+</form>
+
