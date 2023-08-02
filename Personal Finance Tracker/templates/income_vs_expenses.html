@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracker - Income vs Expenses</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    /* Styles here are the same as your previous HTML file */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Finance Tracker</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/transactions">Transactions</a></li>
+        <li><a href="/net_worth">Net Worth</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Reports</a>
+          <div class="dropdown-content">
+            <a href="/reports/spending_breakdown">Spending Breakdown</a>
+            <a href="/reports/income_vs_expenses">Income vs Expenses</a>
+            <a href="/reports/net_worth_over_time">Net Worth Over Time</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="overview">
+  <!-- Content for income vs expenses report -->
+  <h2>Income vs Expenses Report</h2>
+  <form id="date-form">
+    <label for="start-date">Start Date:</label>
+    <input type="date" id="start-date" name="start_date">
+    <label for="end-date">End Date:</label>
+    <input type="date" id="end-date" name="end_date">
+    <input type="submit" value="Update Graph">
+  </form>
+  <div style="max-width: 800px; margin: auto;">
+    <canvas id="incomeVsExpensesChart"></canvas>
+  </div>
+   </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2023 Finance Tracker. All rights reserved.</p>
+  </footer>
+
+  <script>
+// This function gets the data and updates the chart
+let chart;
+
+// This function gets the data and updates the chart
+function updateChart() {
+  const startDate = document.getElementById('start-date').value;
+  const endDate = document.getElementById('end-date').value;
+  
+  fetch(`/reports/income_vs_expenses_data?start_date=${startDate}&end_date=${endDate}`)
+    .then(response => response.json())
+    .then(data => {
+      const ctx = document.getElementById('incomeVsExpensesChart').getContext('2d');
+      
+      // If a chart exists, destroy it
+      if (chart) {
+        chart.destroy();
+      }
+      
+      // Create the new chart
+      chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: data.dates,
+          datasets: [{
+            label: 'Income',
+            data: data.income,
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+          }, {
+            label: 'Expenses',
+            data: data.expenses,
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    });
+}
+
+
+// Call updateChart when the form is submitted
+document.getElementById('date-form').addEventListener('submit', function (event) {
+  event.preventDefault();
+  updateChart();
+});
+
+// Call updateChart once when the page loads
+updateChart();
+  </script>
+</body>
+</html>

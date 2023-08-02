@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js added here -->
+  <style>
+    /* Previous styles... */
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="website-title">Finance Tracker</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/transactions">Transactions</a></li>
+        <li><a href="/net_worth">Net Worth</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Reports</a>
+          <div class="dropdown-content">
+            <a href="/reports/spending_breakdown">Spending Breakdown</a>
+            <a href="/reports/income_vs_expenses">Income vs Expenses</a>
+            <a href="/reports/net_worth_over_time">Net Worth Over Time</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="overview">
+      <!-- Form to input transactions -->
+      <h2>Transactions</h2>
+      <form action="/add_transaction" method="post">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" step="0.01" required>
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category">
+        <label for="type">Type:</label>  
+        <input type="text" id="type" name="type"> 
+        <input type="submit" value="Add Transaction">
+      </form>
+      
+      <!-- File upload form -->
+      <form method="POST" enctype="multipart/form-data" action="/">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.file.label }}<br>
+            {{ form.file(size=32) }}<br>
+        </p>
+        <p>{{ form.submit() }}</p>
+      </form>
+      <!-- End of File upload form -->
+
+      <!-- New section for Net Worth -->
+    <form action="/add_net_worth" method="post">
+    <h2>Net Worth</h2>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="networth_date" required>
+
+    <label for="net_worth">Net Worth:</label>
+    <input type="number" id="net_worth" name="networth_value" step="0.01" required>
+
+    <input type="submit" value="Add Net Worth">
+</form>
+    </section>
+    <section class="transactions">
+      <!-- Add content for displaying transactions and recent activity -->
+    </section>
+    <!-- Removed budget section -->
+  </main>
+  <footer>
+    <p>&copy; 2023 Finance Tracker. All rights: reserved.</p>
+  </footer>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const title = document.getElementById("website-title");
+      title.classList.add("animate-website-name");
+
+      // Remove the animation class after the animation is completed
+      title.addEventListener("animationend", function () {
+        title.classList.remove("animate-website-name");
+      });
+    });
+  </script>
+</body>
+</html>

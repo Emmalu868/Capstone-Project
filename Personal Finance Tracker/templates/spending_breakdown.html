@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracker - Spending Breakdown</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    /* Dropdown Button */
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 08px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+    }
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: #3e8e41;
+    }
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Finance Tracker</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/transactions">Transactions</a></li>
+        <li><a href="/net_worth">Net Worth</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Reports</a>
+          <div class="dropdown-content">
+            <a href="/reports/spending_breakdown">Spending Breakdown</a>
+            <a href="/reports/income_vs_expenses">Income vs Expenses</a>
+            <a href="/reports/net_worth_over_time">Net Worth Over Time</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="overview">
+  <!-- Content for spending breakdown report -->
+  <h2>Spending Breakdown Report</h2>
+  <form id="category-form" method="get">
+    <label for="categories">Select Categories:</label>
+    <select id="categories" name="categories" multiple>
+      <!-- Category options will be populated dynamically using JavaScript -->
+    </select>
+    <input type="submit" value="Update Graph">
+    <button type="button" id="clear-categories">Clear Categories</button> 
+</form>
+  </form>
+  <div style="max-width: 500px; margin: auto;">
+    <canvas id="myChart"></canvas>
+  </div>
+</section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Finance Tracker. All rights reserved.</p>
+  </footer>
+
+   <script>
+    // Fetch the list of categories from the server and populate the select element
+    fetch('/categories')
+      .then(response => response.json())
+      .then(categories => {
+        const selectElement = document.getElementById('categories');
+        categories.forEach(category => {
+          const optionElement = document.createElement('option');
+          optionElement.value = category;
+          optionElement.textContent = category;
+          // If the category is selected, add 'selected' attribute to the option
+          if ({{ selected_categories | tojson }}.includes(category)) {
+            optionElement.selected = true;
+          }
+          selectElement.appendChild(optionElement);
+        });
+      });
+       
+     // Add an event listener to the "Clear Categories" button
+  document.getElementById('clear-categories').addEventListener('click', function() {
+      var selectElement = document.getElementById('categories');
+      for(var i=0; i<selectElement.options.length; i++){
+        selectElement.options[i].selected = false;
+      }
+  });
+       
+  </script>
+
+  <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var labels = {{ categories | map(attribute='category') | list | tojson }};
+    var data = {{ categories | map(attribute='total') | list | tojson }};
+
+    var myPieChart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: labels,
+        datasets: [{
+          data: data,
+          backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(54, 162, 235)',
+            'rgb(255, 206, 86)',
+            'rgb(75, 192, 192)',
+            'rgb(153, 102, 255)',
+            'rgb(255, 159, 64)',
+            'rgb(255, 105, 180)',
+            'rgb(72, 209, 204)',
+            'rgb(50, 205, 50)',
+            'rgb(220, 20, 60)'
+          ]
+        }]
+      }
+    });
+  </script>
+</body>
+</html>
