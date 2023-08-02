@@ -15,7 +15,7 @@
 * [personal_finance_data](https://github.com/Emmalu868/Capstone-Project/blob/main/Resources/personal_finance_data.csv) - [Kaggle](https://www.kaggle.com/datasets/abhilashayagyaseni/personal-finance-dataset?resource=download)
 
 ## Data Collection and Preparation
-### Personal Transactions Analysis
+### A. Personal Transactions Analysis
 **Transaction Data**<br>
 ![](https://github.com/Emmalu868/Capstone-Project/blob/Karthi-k-a/Images/Karthika/1.png)
 <br>
@@ -34,5 +34,30 @@
 <br>
 **Proportion of Credit and Debit Transactions**<br>
 ![](https://github.com/Emmalu868/Capstone-Project/blob/Karthi-k-a/Images/Karthika/pie.png)
+
+### B. Personal Finance Data Analysis
+
+**Debit Analysis**
+
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/emma_category_analysis.png)
+###### Top 3 Amount Spend: 
+- 54,810: Household
+- 28,887: Other
+- 24,607: Food
+
+###### Top 3 Transaction Types:
+- Food: 114 
+- Transportation: 26
+- Other: 21
+
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/emma_description_analysis.png)
+###### Description Analysis:
+- Stuffs, Arrear and reval fee, To Kumara are the top 3 description types
+
+**Credit Analysis**
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/emma_cr_category_analysis.png)
+###### Salary is the primary income resource of 66,910. which weighs 94.6% of the overall income.
+###### Other has the most transactions of 29 times, at 67.4%, and followed by Salary 19 times, at 27.88%.
+
 
 ## Challenges 
