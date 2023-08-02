@@ -17,23 +17,23 @@
 ## Data Collection and Preparation
 ### A. Personal Transactions Analysis
 **Transaction Data**<br>
-![](https://github.com/Emmalu868/Capstone-Project/blob/Karthi-k-a/Images/Karthika/1.png)
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/1.png)
 <br>
 <br>
 **Summary for Credit Transactions**<br>
-![](https://github.com/Emmalu868/Capstone-Project/blob/Karthi-k-a/Images/Karthika/sumcred.png)
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/sumcred.png)
 <br>
-![](https://github.com/Emmalu868/Capstone-Project/blob/Karthi-k-a/Images/Karthika/barcred.png)
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/barcred.png)
 <br>
 <br>
 **Summary for Debit Transactions**<br>
-![](https://github.com/Emmalu868/Capstone-Project/blob/Karthi-k-a/Images/Karthika/sumdeb.png)
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/sumdeb.png)
 <br>
-![](https://github.com/Emmalu868/Capstone-Project/blob/Karthi-k-a/Images/Karthika/bardeb.png)
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/bardeb.png)
 <br>
 <br>
 **Proportion of Credit and Debit Transactions**<br>
-![](https://github.com/Emmalu868/Capstone-Project/blob/Karthi-k-a/Images/Karthika/pie.png)
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/pie.png)
 
 ### B. Personal Finance Data Analysis
 
