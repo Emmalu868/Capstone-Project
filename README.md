@@ -6,7 +6,7 @@
 - Shan Lu
 - Mohammad Zahur
 - Kainat Ahmed
-- Sujiandar
+- Sujandar
 
 ## About the project
 
@@ -15,7 +15,7 @@
 * [personal_finance_data](https://github.com/Emmalu868/Capstone-Project/blob/main/Resources/personal_finance_data.csv) - [Kaggle](https://www.kaggle.com/datasets/abhilashayagyaseni/personal-finance-dataset?resource=download)
 
 ## Data Collection and Preparation
-### Personal transactions Analysis
+### Personal Transactions Analysis
 **Transaction Data**<br>
 ![](https://github.com/Emmalu868/Capstone-Project/blob/Karthi-k-a/Images/Karthika/1.png)
 <br>
