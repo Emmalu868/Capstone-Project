@@ -34,7 +34,7 @@ Data cleaning is a crucial step in the Personal Finance Management Application p
 **Step 1:** Install necessary packages<br> 
 **Step 2:** Prepare the data<br>
 **Step 3:** Create the Streamlit app<br>
-**Step 4:** Load and process data<br>
+**Step 4:** Load and process the data<br>
 **Step 5:** Create the Streamlit app layout<br>
 **Step 6:** Run the Streamlit app by using the commannd `streamlit run personal_transactions.py`
 
@@ -54,8 +54,9 @@ Displays a summary of monthly transactions, including total credits, total debit
 ![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/pie.png)
 
 #### Spending Categories Breakdown
-Displays a bar chart to visualize spending breakdown by different categories such as groceries, entertainment, utilities, etc., to see where most of the money is going.
-
+Displays a bar chart to visualize spending breakdown by different categories such as groceries, entertainment, utilities, etc., to see where most of the money is going.<br>
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/specat1.png)
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/specat2.png)
 
 ### B. Personal Finance Data Analysis and Dashboard
 
