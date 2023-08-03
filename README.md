@@ -3,10 +3,10 @@
 
 ## Group Members
 - Karthika Ramachandran
-- Shan Lu
+- Shan Lu (Emma)
 - Mohammad Zahur
 - Kainat Ahmed
-- Sujandar
+- Sujandar Mahesan
 
 ## About the project
 The Personal Finance Management Application is a web-based tool that allows users to manage their personal finance, track transactions, and monitor net worth over time. It provides features to add the individual transactions, and produce visualizations of spending breakdowns and income vs. expenses over time.
@@ -17,20 +17,20 @@ The Personal Finance Management Application is a web-based tool that allows user
 
 ## Data Collection and Preparation
 
-Data cleaning is a crucial step in the Personal Finance Management Application project.
+- Data cleaning is a crucial step in the Personal Finance Management Application project.
 In this step we focused on ensuring the datasets are accurate, consistent, and ready for analysis. 
 
-The data cleaning process involved several key steps:
+- The data cleaning process involved several key steps:
 
-Handling Missing Values: Addressing missing data points in the datasets is essential to prevent bias and errors in the analysis. Various techniques, such as imputation or removal of rows/columns with missing values, were applied to handle this issue.
+- Handling Missing Values: Addressing missing data points in the datasets is essential to prevent bias and errors in the analysis. Various techniques, such as imputation or removal of rows/columns with missing values, were applied to handle this issue.
 
-Removing Duplicates: Duplicates in the datasets could lead to erroneous results. The data cleaning process involves identifying and eliminating any duplicate entries to maintain data integrity.
+- Removing Duplicates: Duplicates in the datasets could lead to erroneous results. The data cleaning process involves identifying and eliminating any duplicate entries to maintain data integrity.
 
-Data Type Conversion: Converting data to appropriate data types is necessary for accurate calculations and visualizations. During data cleaning, appropriate data types were assigned to each column.
+- Data Type Conversion: Converting data to appropriate data types is necessary for accurate calculations and visualizations. During data cleaning, appropriate data types were assigned to each column.
 
-Data Integration: Merging data from different sources is an important aspect of this project. Data from the personal_transactions and personal_finance_data datasets were integrated, combining relevant information into a unified dataset.
+- Data Integration: Merging data from different sources is an important aspect of this project. Data from the personal_transactions and personal_finance_data datasets were integrated, combining relevant information into a unified dataset.
 
-Handling Inconsistent Categorization: Addressing inconsistencies in categorization and description fields ensures that the analysis and visualizations are meaningful. Standardizing category names and descriptions were part of the data cleaning process.
+- Handling Inconsistent Categorization: Addressing inconsistencies in categorization and description fields ensures that the analysis and visualizations are meaningful. Standardizing category names and descriptions were part of the data cleaning process.
 
 ### A. Personal Transactions Dashboard (Streamlit)
 **Transaction Data**<br>
@@ -52,7 +52,7 @@ Handling Inconsistent Categorization: Addressing inconsistencies in categorizati
 **Proportion of Credit and Debit Transactions**<br>
 ![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/pie.png)
 
-### B. Personal Finance Data Analysis
+### B. Personal Finance Data Analysis and Dashboard
 
 **Debit Analysis**
 
@@ -122,17 +122,17 @@ Handling Inconsistent Categorization: Addressing inconsistencies in categorizati
 
 
 ## Challenges 
-The Personal Finance Management Application encountered several challenges during its development. Some of the challenges faced by the team includes:
+- The Personal Finance Management Application encountered several challenges during its development. Some of the challenges faced by the team includes:
 
-Data Cleaning and Preparation: Ensuring the accuracy and consistency of data from external datasets required thorough data cleaning and preparation techniques
+- Data Cleaning and Preparation: Ensuring the accuracy and consistency of data from external datasets required thorough data cleaning and preparation techniques
 
-Data Availability: Finding suitable datasets that matches the requirements of our analysis and specification was difficult.
+- Data Availability: Finding suitable datasets that matches the requirements of our analysis and specification was difficult.
 
-Performance and Scalability: As the number of users and transactions grows, the application's performance and scalability become crucial. Ensuring the application can handle a large volume of data and user requests efficiently would be a challenge.
+- Performance and Scalability: As the number of users and transactions grows, the application's performance and scalability become crucial. Ensuring the application can handle a large volume of data and user requests efficiently would be a challenge.
 
-Data Consistency: Ensuring data consistency between the database and user interface and handling concurrent data updates can be challenging.
+- Data Consistency: Ensuring data consistency between the database and user interface and handling concurrent data updates can be challenging.
 
-Despite these challenges, the team successfully developed the Personal Finance Management Application that provides valuable insights into their finances and empowering them to make informed financial decisions.
+- Despite these challenges, the team successfully developed the Personal Finance Management Application that provides valuable insights into their finances and empowering them to make informed financial decisions.
 
 
 
