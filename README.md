@@ -61,7 +61,7 @@ The Personal Finance Management Application is a web-based tool that allows user
 ###### Other has the most transactions of 29 times, at 67.4%, and followed by Salary 19 times, at 27.88%.
 
 
-### C. Finance Tracker
+### C. Finance Tracker (Flask)
 
 #### Homepage 
 ![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/homepage.png)
@@ -69,7 +69,7 @@ The Personal Finance Management Application is a web-based tool that allows user
 - The homepage presents an intuitively designed web application user interface, facilitating users in entering essential transaction details, such as date of item purchase, product description, amount, product category for grouping, and a type option to differentiate between debit (income) and credit (expense). Additionally, users have the capability to upload their historical financial data by utilizing the "Choose File" and "Upload File" features. Moreover, the platform offers a net worth tracking option, enabling users to monitor their financial progress over time.
 
 
-#### Trasactions
+#### Transactions
 ![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/trans.png)
 
 - Upon inputting a transaction via the homepage, the system will promptly post and record it under the "Transaction" tab. Subsequently, users are granted the ability to apply filters to their transactions, permitting sorting by date range and purchase category for enhanced transaction management.
@@ -81,7 +81,7 @@ The Personal Finance Management Application is a web-based tool that allows user
 - Upon selecting the "Reports" tab, users gain access to three comprehensive visual reports designed to facilitate a deeper understanding of their financial management. These reports offer valuable insights into their financial status and aid in making informed decisions.
 
 
-#### Net Woth Tab
+#### Net Worth Tab
 ![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/report.png)
 
 - The Net Worth tab serves as a user-friendly and efficient platform for promptly visualizing and managing the inputted net worth data. Through this tab, users are provided with a comprehensive overview of their net worth, empowering them to gain valuable insights into their financial standing and progress. The Net Worth tab offers a practical function to delete net worth entries when necessary. This feature ensures that users maintain accurate and up-to-date records, enabling them to maintain the integrity and reliability of their financial data.
