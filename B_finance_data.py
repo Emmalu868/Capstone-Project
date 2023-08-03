@@ -123,7 +123,7 @@ def main():
     st.markdown("##### Stuffs, Arrear and reval fee, To Kumara are the top 3 description types ")
     
     #Credit analysis
-    credits = personal_finance[personal_finance["Transaction Type"] == 'Debit']
+    credits = personal_finance[personal_finance["Transaction Type"] == 'Credit']
     pfd_cr_by_cat, fig = count_sum(credits, "Category")
     st.dataframe(pfd_cr_by_cat)
     st.plotly_chart(fig)
