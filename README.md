@@ -9,6 +9,7 @@
 - Sujandar
 
 ## About the project
+The Personal Finance Management Application is a web-based tool that allows users to manage their personal finance, track transactions, and monitor net worth over time. It provides features to add the individual transactions, and produce visualizations of spending breakdowns and income vs. expenses over time.
 
 ## Datasets
 * [personal_transactions](https://github.com/Emmalu868/Capstone-Project/blob/main/Resources/personal_transactions.csv) - [Kaggle](https://www.kaggle.com/datasets/bukolafatunde/personal-finance?resource=download&select=personal_transactions.csv)
@@ -61,6 +62,17 @@
 
 
 ## Challenges 
+The Personal Finance Management Application encountered several challenges during its development. Some of the challenges faced by the team includes:
+
+Data Cleaning and Preparation: Ensuring the accuracy and consistency of data from external datasets required thorough data cleaning and preparation techniques
+
+Data Availability: Finding suitable datasets that matches the requirements of our analysis and specification was difficult.
+
+Performance and Scalability: As the number of users and transactions grows, the application's performance and scalability become crucial. Ensuring the application can handle a large volume of data and user requests efficiently would be a challenge.
+
+Data Consistency: Ensuring data consistency between the database and user interface and handling concurrent data updates can be challenging.
+
+Despite these challenges, the team successfully developed the Personal Finance Management Application that provides valuable insights into their finances and empowering them to make informed financial decisions.
 
 
 
@@ -106,3 +118,4 @@
 ![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/report3.png)
 
 - The Net Worth Over Time Report provides users with a dynamic visualization of their financial trajectory and net worth evolution. This insightful report leverages the meticulously inputted financial data to generate a comprehensive line graph, which graphically illustrates the fluctuations in net worth over a defined time span. As the graph depicts the variations in net worth, users can observe the impact of their financial decisions, investments, and income changes over time. This empowers them to make informed adjustments to their financial strategies and effectively plan for the future.
+  
