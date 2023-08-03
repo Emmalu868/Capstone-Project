@@ -61,6 +61,28 @@ Displays a bar chart to visualize spending breakdown by different categories suc
 ![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/specat1.png)
 ![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/specat2.png)
 
+#### Transaction Timeline
+Displays a line plot of total spending over time to track financial progress and identify patterns in spending and saving habits.<br>
+<br>
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/transtime.png)
+
+#### Income vs. Expenses
+Displays a comparison of monthly income against monthly expenses to understand how much one is saving or overspending each month.<br>
+<br>
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/invex.png)
+
+#### Credit Card Usage Analysis
+Displays credit card statistics, a line chart showing credit card spending over time and a bar chart showing credit card spending by merchant. This helps gain insights into how the credit card is being used, where it is being used, what types of purchases are being made, and other relevant metrics.<br>
+<br>
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/ccusage.png)
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/ccusage1.png)
+
+#### Top Merchants Analysis
+Displays the top merchants which helps identify where one spends the most and analyze spending behavior with each merchant.<br>
+<br>
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/topmer.png)
+
+
 ### B. Personal Finance Data Analysis and Dashboard
 **Step 1:** Install necessary packages <br>
 ##### e.g. `pathlib`, `numpy`, `pandas`, `matplotlib.pyplot`, `seaborn`, `streamlit`, `plotly.express`, `plotly.subplots`, `plotly.graph_objects`
