@@ -62,10 +62,22 @@ Displays a bar chart to visualize spending breakdown by different categories suc
 ![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/specat2.png)
 
 ### B. Personal Finance Data Analysis and Dashboard
+**Step 1:** Install necessary packages <br>
+##### e.g. `pathlib`, `numpy`, `pandas`, `matplotlib.pyplot`, `seaborn`, `streamlit`, `plotly.express`, `plotly.subplots`, `plotly.graph_objects`
+**Step 2:** Prepare the data <br>
+**Step 3:** Create the Streamlit app<br>
+**Step 4:** Load and process the data<br>
+**Step 5:** Create the Streamlit app layout<br>
+**Step 6:** Run the Streamlit app by using the commannd `streamlit run B_finance_data.py.py`
+
+#### Transaction Data
+Displays the raw transaction data obtained from a given dataset.<br>
+<br>
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/B_raw_data.png)
 
 **Debit Analysis**
 
-![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/emma_category_analysis.png)
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/B_category_analysis.png)
 ###### Top 3 Amount Spend: 
 - 54,810: Household
 - 28,887: Other
@@ -76,12 +88,12 @@ Displays a bar chart to visualize spending breakdown by different categories suc
 - Transportation: 26
 - Other: 21
 
-![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/emma_description_analysis.png)
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/B_description_analysis.png)
 ###### Description Analysis:
 - Stuffs, Arrear and reval fee, To Kumara are the top 3 description types
 
 **Credit Analysis**
-![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/emma_cr_category_analysis.png)
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/B_cr_category_analysis.png)
 ###### Salary is the primary income resource of 66,910. which weighs 94.6% of the overall income.
 ###### Other has the most transactions of 29 times, at 67.4%, and followed by Salary 19 times, at 27.88%.
 
