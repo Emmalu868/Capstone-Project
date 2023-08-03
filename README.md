@@ -165,7 +165,7 @@ Displays the raw transaction data obtained from a given dataset.<br>
 
 
 ## Challenges 
-- The Personal Finance Management Application encountered several challenges during its development. Some of the challenges faced by the team includes:
+The Personal Finance Management Application encountered several challenges during its development. Some of the challenges faced by the team includes:
 
 - Data Cleaning and Preparation: Ensuring the accuracy and consistency of data from external datasets required thorough data cleaning and preparation techniques
 
