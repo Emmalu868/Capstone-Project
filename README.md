@@ -16,11 +16,7 @@ The Personal Finance Management Application is a web-based tool that allows user
 * [personal_finance_data](https://github.com/Emmalu868/Capstone-Project/blob/main/Resources/personal_finance_data.csv) - [Kaggle](https://www.kaggle.com/datasets/abhilashayagyaseni/personal-finance-dataset?resource=download)
 
 ## Data Collection and Preparation
-
-- Data cleaning is a crucial step in the Personal Finance Management Application project.
-In this step we focused on ensuring the datasets are accurate, consistent, and ready for analysis. 
-
-- The data cleaning process involved several key steps:
+Data cleaning is a crucial step in the Personal Finance Management Application project. In this step we focused on ensuring the datasets are accurate, consistent, and ready for analysis. The data cleaning process involved several key steps:
 
 - Handling Missing Values: Addressing missing data points in the datasets is essential to prevent bias and errors in the analysis. Various techniques, such as imputation or removal of rows/columns with missing values, were applied to handle this issue.
 
@@ -32,25 +28,34 @@ In this step we focused on ensuring the datasets are accurate, consistent, and r
 
 - Handling Inconsistent Categorization: Addressing inconsistencies in categorization and description fields ensures that the analysis and visualizations are meaningful. Standardizing category names and descriptions were part of the data cleaning process.
 
-### A. Personal Transactions Dashboard (Streamlit)
-**Transaction Data**<br>
-![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/1.png)
-<br>
-<br>
-**Summary for Credit Transactions**<br>
-![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/sumcred.png)
-<br>
-![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/barcred.png)
-<br>
-<br>
-**Summary for Debit Transactions**<br>
-![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/sumdeb.png)
-<br>
-![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/bardeb.png)
-<br>
-<br>
-**Proportion of Credit and Debit Transactions**<br>
-![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/pie.png)
+
+## Development
+### A. Personal Transactions Dashboard (Streamlit) - [personal_transactions.py](https://github.com/Emmalu868/Capstone-Project/blob/main/personal_transactions.py)
+**Step 1:** Install necessary packages<br> 
+**Step 2:** Prepare the data<br>
+**Step 3:** Create the Streamlit app<br>
+**Step 4:** Load and process data<br>
+**Step 5:** Create the Streamlit app layout<br>
+**Step 6:** Run the Streamlit app by using the commannd `streamlit run personal_transactions.py`
+
+#### Transaction Data
+Displays the raw transaction data obtained from a given dataset. 
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/1.png)
+
+#### Monthly Summary
+Displays a summary of monthly transactions, including total credits, total debits, and a pie chart showing the proportion of credits and debits.
+##### Summary of Credit Transactions
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/sumcred.png)
+
+##### Summary of Debit Transactions
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/sumdeb.png)
+
+##### Proportion of Credit and Debit Transactions
+![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/personal_transactions/pie.png)
+
+#### Spending Categories Breakdown
+Displays a bar chart to visualize spending breakdown by different categories such as groceries, entertainment, utilities, etc., to see where most of the money is going.
+
 
 ### B. Personal Finance Data Analysis and Dashboard
 
