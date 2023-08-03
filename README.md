@@ -16,6 +16,22 @@ The Personal Finance Management Application is a web-based tool that allows user
 * [personal_finance_data](https://github.com/Emmalu868/Capstone-Project/blob/main/Resources/personal_finance_data.csv) - [Kaggle](https://www.kaggle.com/datasets/abhilashayagyaseni/personal-finance-dataset?resource=download)
 
 ## Data Collection and Preparation
+
+Data cleaning is a crucial step in the Personal Finance Management Application project.
+In this step we focused on ensuring the datasets are accurate, consistent, and ready for analysis. 
+
+The data cleaning process involved several key steps:
+
+Handling Missing Values: Addressing missing data points in the datasets is essential to prevent bias and errors in the analysis. Various techniques, such as imputation or removal of rows/columns with missing values, were applied to handle this issue.
+
+Removing Duplicates: Duplicates in the datasets could lead to erroneous results. The data cleaning process involves identifying and eliminating any duplicate entries to maintain data integrity.
+
+Data Type Conversion: Converting data to appropriate data types is necessary for accurate calculations and visualizations. During data cleaning, appropriate data types were assigned to each column.
+
+Data Integration: Merging data from different sources is an important aspect of this project. Data from the personal_transactions and personal_finance_data datasets were integrated, combining relevant information into a unified dataset.
+
+Handling Inconsistent Categorization: Addressing inconsistencies in categorization and description fields ensures that the analysis and visualizations are meaningful. Standardizing category names and descriptions were part of the data cleaning process.
+
 ### A. Personal Transactions Dashboard (Streamlit)
 **Transaction Data**<br>
 ![](https://github.com/Emmalu868/Capstone-Project/blob/main/Images/Karthika/1.png)
